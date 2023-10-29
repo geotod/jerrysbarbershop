@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jerry's Barbershop</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="home_style.css">
+		<link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<div class="bg" id="top_section">
+			<div class="navigation">
+			<nav id="navBar" class="navbar navbar-expand-sm">
+				<div class="logo">
+					<a href="home.html" class="navbar-brand">
+					<span><img src="assets/logo.png" class="img-fluid"></span>
+					</a>
+				</div>
+				<div class="toggle">
+					<button class="navbar-toggler" type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   						<span class="navbar-toggler-icon"></span>
+  					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="items">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="#home_section" class="nav-link active">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#services_section" class="nav-link">Services</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about_section" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#app_section" class="nav-link">Appointment</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact_section" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</nav>
+		</div>
+			<header class="hide-content">
+				<div class="introduction">
+					<h2>Welcome to Jerry's Barbershop – Your Go-To Destination for Grooming Excellence!</h3>
+				</div>
+				<div class="text">
+					<p class="h5">Step into our world of style and precision, where skilled barbers craft the perfect look for you.
+					 Discover a cut above the rest at Jerry's Barbershop.</p>
+				</div>
+				<div class="button">
+					<a href="#app_section">
+					<button class="btn btn-lg">Schedule an appointment</button>
+					</a>
+				</div>
+			</header>
+		</div>
+		<main>
+			<section id="services_section" class="services">
+				<div class="section_title">
+					<h1>Our Services</h3>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="image1">
+							<h4>Haircuts</h5>
+							<img src="assets/hair.png" class="img-fluid">
+						</div>
+						<div class="desc1">
+							<p>Our expert barbers provide precision haircuts tailored to your unique style and preferences.
+							 Whether you're looking for a classic trim or a trendy new look, we'll make sure you leave with a 
+							fresh and confident appearance.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="image2">
+							<h4>Beard Trimming</h5>
+							<img src="assets/trimmer.png" class="img-fluid">
+						</div>
+						<div class="desc2">
+							<p>For those who take pride in their facial hair, our skilled barbers offer meticulous beard
+							 grooming and shaping. We'll sculpt your beard to perfection, ensuring it complements your 
+							overall style.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="image3">
+							<h4>Waxing</h5>
+							<img src="assets/wax.png" class="img-fluid">
+						</div>
+						<div class="desc3">
+							<p>Our waxing services provide a smooth and long-lasting solution for unwanted hair removal.
+							 Whether you're interested in eyebrow shaping or full-body waxing, we use high-quality products
+							 and techniques to deliver a comfortable and effective experience.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about_section" class="about">
+				<div class="sec_title">
+					<h2>About Us</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="assets/barbershop.jpg" class="img-fluid">
+					</div>
+					<div class="col-lg-6">
+						<div class="more">
+							<p>Welcome to Jerry's Barbershop, where style meets tradition. With over 25 years of combined experience in the industry, our team of skilled barbers is dedicated to providing top-notch grooming services to our valued clients.<br><br>
+
+							At Jerry's Barbershop, we take pride in our commitment to excellence, which has earned us several prestigious awards, including the "Golden Shears Excellence Award" and the "Best Barbershop of the Year" award. These accolades reflect our unwavering dedication to delivering the highest quality haircuts, beard grooming, and waxing services.<br><br>
+
+							We invite you to experience the difference at Jerry's Barbershop. Our passion for precision, attention to detail, and friendly atmosphere set us apart. Come visit us and discover why we're the go-to destination for all your grooming needs. </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="appointment" id="app_section">
+				<h3>Appointment</h3>
+    				<form id="appointmentForm">
+        			<div class="form-group">
+            				<label for="fullName">Full Name:</label>
+            				<input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            				<div id="fullNameError" class="error-message"></div>
+        			</div>
+        			<div class="form-group">
+            				<label for="email">Email:</label>
+            				<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            				<div id="emailError" class="error-message"></div>
+        			</div>
+        			<div class="form-group">
+            				<label for="phoneNumber">Phone Number:</label>
+            				<input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+            				<div id="phoneNumberError" class="error-message"></div>
+        			</div>
+        			<button type="submit" class="btn">Submit</button>
+   				</form>
+			</section>
+		</main>
+		<footer id="contact_section">
+			<div class="row">
+				<div class="col-md-4">
+					<h5>Quick Links</h5>
+					<div class="links">
+						<a href="#top_section">Home</a>
+						<a href="#services_section">Services</a>
+						<a href="#about_section">About us</a>
+						<a href="#app_section">Appointment</a>
+						<a href="#contact_section">Contact</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h5>Contact</h5>
+					<p>+30 1234567890</p>
+					<p>jerrys@barbershop.trim</p>
+					<p>Athens, Greece</p>
+				</div>
+				<div class="col-md-4">
+					<p>Made by George Todadze</p>
+				</div>
+			</div>
+		</footer>
+		<script>
+        		document.addEventListener("DOMContentLoaded", function () {
+    				var navbarToggler = document.querySelector(".navbar-toggler");
+    				var navigationMenu = document.querySelector(".navbar-collapse");
+				
+				navbarToggler.addEventListener("click", function () {
+            				navigationMenu.classList.toggle("show");
+				});
+			});
+			$(document).ready(function () {
+				$("header").removeClass("hide-content").hide().fadeIn(1000);
+				$(".nav-link").click(function (e) {
+        				e.preventDefault();
+        				var targetSection = $($(this).attr("href"));
+        				$("html, body").animate({
+            					scrollTop: targetSection.offset().top
+        				}, 50);
+    				});
+    				$(".links a").click(function (e) {
+        				e.preventDefault();
+        				var targetSection = $($(this).attr("href"));
+        				$("html, body").animate({
+            					scrollTop: targetSection.offset().top
+        				}, 50);
+    				});
+
+    				var navbarToggler = $(".navbar-toggler");
+    				var navigationMenu = $(".navbar-collapse");
+
+    				navbarToggler.click(function () {
+        				if (navigationMenu.is(":hidden")) {
+            					navigationMenu.slideDown(300);
+        				} else {
+            					navigationMenu.slideUp(300);
+        				}
+    				});
+
+
+				const appointmentForm = $("#appointmentForm");
+    				const fullNameInput = $("#fullName");
+    				const emailInput = $("#email");
+    				const phoneNumberInput = $("#phoneNumber");
+
+    				const fullNameError = $("#fullNameError");
+    				const emailError = $("#emailError");
+    				const phoneNumberError = $("#phoneNumberError");
+
+
+    				function validateFullName() {
+        				const fullNameValue = fullNameInput.val().trim();
+        				if (fullNameValue.length < 3) {
+            					fullNameError.text("Full name must be at least 3 characters.");
+            					fullNameInput.addClass("is-invalid");
+           					return false;
+        				} else {
+            					fullNameError.text("");
+            					fullNameInput.removeClass("is-invalid");
+            					return true;
+        				}
+    				}
+
+
+    				function validateEmail() {
+        				const emailValue = emailInput.val().trim();
+        				const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        				if (!emailPattern.test(emailValue)) {
+            					emailError.text("Invalid email address.");
+            					emailInput.addClass("is-invalid");
+            					return false;
+        				} else {
+            					emailError.text("");
+            					emailInput.removeClass("is-invalid");
+            					return true;
+        				}
+    				}
+
+
+    				function validatePhoneNumber() {
+        				const phoneNumberValue = phoneNumberInput.val().trim();
+        				const phoneNumberPattern = /^\d{1,10}$/;
+        				if (!phoneNumberPattern.test(phoneNumberValue)) {
+            					phoneNumberError.text("Phone number should be up to 10 digits.");
+            					phoneNumberInput.addClass("is-invalid");
+            					return false;
+        				} else {
+            					phoneNumberError.text("");
+            					phoneNumberInput.removeClass("is-invalid");
+            					return true;
+        				}
+    				}
+
+
+    				appointmentForm.on("submit", function (e) {
+        				e.preventDefault();
+
+        				const isFullNameValid = validateFullName();
+        				const isEmailValid = validateEmail();
+        				const isPhoneNumberValid = validatePhoneNumber();
+
+        				if (isFullNameValid && isEmailValid && isPhoneNumberValid) {
+            					alert("Appointment submitted successfully!");
+            					appointmentForm[0].reset();
+        				}
+    				});
+
+    				fullNameInput.on("input", validateFullName);
+    				emailInput.on("input", validateEmail);
+    				phoneNumberInput.on("input", validatePhoneNumber);
+				
+			});
+
+    		</script>
+	</body>
+</html>
